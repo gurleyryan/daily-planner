@@ -47,4 +47,12 @@ $(document).ready(function () {
     }
   });
   // TODO: Add code to display the current date in the header of the page.
+  const yearDisplay = $('#year');
+  yearDisplay.text(dayjs().format('YYYY'));
+  const dateDisplay = $('#date');
+  dateDisplay.text(dayjs().format('dddd, MMMM D YYYY'));
+  const timeDisplay = $('#time');
+  timeDisplay.text(dayjs().format('h:mm:ss a'));
+  updateTime = () => { timeDisplay.text(dayjs().format('h:mm:ss a')); }
+  setInterval(updateTime, 1000);
 });
