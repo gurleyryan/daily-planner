@@ -19,9 +19,9 @@ Built a simple calendar application that allows a user to save events for each h
 
 [Link to website](https://gurleyryan.github.io/daily-planner/)
 
+Click into a timeblock to type out an event and then click the save button. Timeblocks are color coded to indicate whether they are in the past, present, or future. Saved events will remain on refresh.
 
-
-![Alt Text](assets/images/ "Website Screenshot")
+![Alt Text](assets/images/DailyPlanner.png "Website Screenshot")
 
 ## Contributing
 
