@@ -31,12 +31,7 @@ $(document).ready(function () {
   $(".time-block").each(function () {
     const blockId = $(this).attr('id');
     const saveUserInput = localStorage.getItem(blockId);
-
-    if (saveUserInput !== null) {
-      $(this).children('.description').val(saveUserInput);
-    } else if (currentHour >= 18) {
-      clear(saveUserInput);
-    }
+    $(this).children('.description').val(saveUserInput);
   });
   // Code to display the current date in the header of the page.
   const currentDay = dayjs().format('dddd, MMMM D YYYY, h:mm:ss a');
